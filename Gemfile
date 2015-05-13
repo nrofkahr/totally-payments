@@ -24,6 +24,9 @@ gem 'bootstrap-sass'
 # Use stripe for payments
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
+# Figaro for secure management of credentials
+gem 'figaro'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
