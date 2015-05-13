@@ -20,6 +20,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 #Bootstrap for sexyness
 gem 'bootstrap-sass'
+
+# Use stripe for payments
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
