@@ -27,6 +27,9 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Figaro for secure management of credentials
 gem 'figaro'
 
+# Add letter opener for handling emails in development
+gem 'letter_opener', group: :development
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
