@@ -31,7 +31,7 @@ growth_hacking_monthly = Product.create(
   author_image_name: "teacher-image.jpg",)
 
 
-growth_hacking_monthly = Product.create(
+copywriting_monthly = Product.create(
   title: "Copywriting Monthly", 
   subtitle: "Ongoing Course", 
   author: "Nate", 
@@ -55,7 +55,7 @@ growth_hacking_monthly = Product.create(
   author_image_name: "teacher-image.jpg",)
 
 analytics_monthly = Product.create(
-  title: "Copywriting Monthly", 
+  title: "Analytics Monthly", 
   subtitle: "Ongoing Course", 
   author: "Nate", 
   price: "9.00", 
