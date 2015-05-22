@@ -12,11 +12,11 @@ class Product < ActiveRecord::Base
 	end
 
 	def thumbnail_image_name
-		"product-#{image_name}.png"
+    "product-#{image_name}.png"
 	end
 
 	def header_image_name
-		"header-#{image_name}.png"
-	end
+    "header-#{image_name}.png"
+  end
 	
 end
