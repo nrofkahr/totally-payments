@@ -13,14 +13,10 @@
 <body>
 	<div id="content" class="container">
 	   <header id="content-header">
-	      <div id="price-container">
-	      	<% @products.each do |product| %>
-	        <span class="glyphicon glyphicon-tag"></span><span class="price">$<%= product.price %></span>
-	        <% end %>
-	      </div>
-	      
+     <div id="price-container">
+       <span class="glyphicon glyphicon-tag"></span><span class="price">$<%= @product.price %>0</span>
+     </div>
 	      <%= yield :head %>
-	      
 	    </header>
 
 			<%= yield %>

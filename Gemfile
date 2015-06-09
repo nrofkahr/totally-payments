@@ -27,9 +27,6 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Figaro for secure management of credentials
 gem 'figaro'
 
-# Add letter opener for handling emails in development
-gem 'letter_opener', group: :development
-
 # Add activeAdmin to generate an admin interface
 gem 'activeadmin', github: 'gregbell/active_admin'
 
@@ -66,11 +63,19 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Add letter opener for handling emails in development
+	gem 'letter_opener'
+
+	# Better error handling
+	gem 'better_errors'
+
 end
 
+group :production do
+	# Use postgres as the database in production
+	gem 'pg'
 
-# Use postgres as the database in production
-gem 'pg', group: :production
-
-#Add 12 factor for Heroku
-gem 'rails_12factor', group: :production 
+	#Add 12 factor for Heroku
+	gem 'rails_12factor'
+end
