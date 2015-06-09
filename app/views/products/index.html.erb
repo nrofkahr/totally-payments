@@ -1,11 +1,12 @@
 
 <% content_for :head do %>
-<%= image_tag('header-image.jpg', id: 'content-header-img', alt: 'Check out our courses') %>
+	<%= image_tag('header-image.jpg', id: 'content-header-img', alt: 'Check out our courses') %>
 <% end %>
-
-<article id="details-article" class="col-sm-8">
-  <h1 id="article-title">Our Courses</h1>
-</article>
+<section id="content-details" class="row clearfix">
+	<article id="details-article" class="col-sm-8">
+	  <h1 id="article-title">Our Courses</h1>
+	</article>
+<section>
 
 
 <section id="products">
@@ -14,7 +15,7 @@
 	 <a href="<%= product_path(product) %>">
 	  <div class="product-image-container">
 	   <img src='<%= asset_path product.thumbnail_image_name %>' alt="<% product.title %>"/>
-	   <span class="product-price">$<%= product.price %>0</span>
+	   <span class="product-price">$<%= product.price %></span>
 	 </div>
 	 <p class="product-title"><%= product.title %></p></a>
 	</div>

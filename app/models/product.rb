@@ -4,7 +4,7 @@ class Product < ActiveRecord::Base
 	end
 
 	def price_in_cents
-		(self.price * 100).to_i
+		(self.price * 100.00).to_i
 	end
 
 	def image_name
